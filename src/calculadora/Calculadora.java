@@ -29,7 +29,11 @@ public class Calculadora {
     }
     float division(float a,float b)
     {
-    return a/b;
+        if (b==0){
+        System.out.print("esa division no existe");
+        return -1;
+        }
+           return a/b;
     }
    double potencia(double a,double b)
     {
